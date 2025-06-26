@@ -1,0 +1,53 @@
+@import url(https://fonts.bunny.net/css?family=Newsreader:200...800);
+@import url(https://fonts.bunny.net/css?family=Outfit:400);
+
+:root {
+  --color-text: #2e2e2e;
+  --color-background: #fefefe;
+  --color-primary: #D9D9D9;
+  --color-accent: #4C5C8C;
+  /* --color-accent: #9C9BA3; */
+  --color-okay: hsl(160, 100%, 37%);
+  --color-danger: hsl(352, 100%, 37%);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #fff;
+    --color-background: #1a1a1a;
+  }
+} */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: outfit;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+  transition: 0.4s;
+  padding: 3px;
+}
